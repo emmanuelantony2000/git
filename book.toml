@@ -1,0 +1,5 @@
+[book]
+authors = ["Emmanuel Antony"]
+multilingual = false
+src = "src"
+title = "git"
