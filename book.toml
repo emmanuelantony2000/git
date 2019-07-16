@@ -2,4 +2,8 @@
 authors = ["Emmanuel Antony"]
 multilingual = false
 src = "src"
-title = "git"
+description = "This book gives an introduction to Git."
+title = "Git"
+
+[output.html]
+git-repository-icon = "fa-git-alt"
