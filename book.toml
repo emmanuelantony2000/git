@@ -4,6 +4,5 @@ multilingual = false
 src = "src"
 description = "This book gives an introduction to Git."
 title = "Git"
+language = "en"
 
-[output.html]
-git-repository-icon = "fa-git-alt"

@@ -1,18 +1,4 @@
 # Introduction
 Unlike other tutorials, I want to keep this tutorial simple and to the point. I am covering the things in detail that I felt hard to grasp.
-## What is Git, and why do we use it?
-In simple words, Git is a version control system. Rather than storing a thing ("a thing" here refers to a document or a codebase or in theory anything), it saves the changes that it underwent from the day of its creation.
 
-For example, we have to write a paragraph about cats. We start by writing a sentence on a new page, "Cats are lovely". Now if we want to rewrite this sentence as "Cats are so lovely", then we have to rewrite the whole new sentence in a whole new page.
-
-The other approach is to write, "Cats" on the first page, "Cats are" on the second page, and "Cats are lovely" on the third page. Technically we are splitting the whole string by spaces and then writing the first word on the first page, first and second words on the second page and the rest following the same pattern. Now if we want to rewrite the sentence to "Cats are so lovely", then we have to throw off the third page and continue from information on the second page.
-
-Now, this might seem a tedious work to do to write a single sentence. However, this is what Git does, and we don't have to worry about anything, Git manages each step automatically. Here in this analogy, we are taking each word as a change, but in reality, after we have edited the document, it might be a word or a sentence, we have to `commit` it, and then Git considers it as a change. So if someone makes a change to the document which was not required, then we can `revert` to an older commit as Git remembers every change that ever happened to the document.
-
-We can take this analogy even further. Suppose we already have written, "Cats are" and committed that change. Now you want to write "Cats are cute", and I want to write "Cats are lovely". So we can `branch` out like a tree from the same base. If required, we can later merge these two branches into one and keep one of the conflicting changes we like. Conflicting changes means either we can keep "cute" or "lovely" while merging both the branches. From now onwards, imagine Git as a tree which begins from a base and branches out when needed. The only difference is that while using Git, we can merge two branches back to a single branch.
-
-Like this analogy, Git does store the document as a separate one after each change. Git usually works from a `.git` folder inside the project folder. A usual codebase is enormous, with many files and folders. So if Git is storing a copy of the codebase after each commit, the size of the project folder would be huge because of the vast number of redundant files stored. However, Git is designed to work with a minimal footprint and near zero overhead on the project and Git has a solution to such a problem.
-
-You guys must have used shortcuts. It is a link to an actual file in some other destination. The shortcut itself is a pointer which points to the actual file. This technique is used by Git a lot. When we commit a project, the unchanged files are a shortcut to the files of the previous commit (which themselves might be a shortcut to a more older commit). In layman's terms, Git stores the changed files and the others are just a shortcut.
-
-However, if we think more, the `.git` folder stores the whole project folder from the start and the subsequent changes. Git should make the project folder bigger than the actual project then. To prevent this Git compresses whatever it is storing.
+Git is rather a very deep thing that most software developers don't focus learning rather use some of it on a day to day basis to get things done. But there is a lot more to that basic version control system.
